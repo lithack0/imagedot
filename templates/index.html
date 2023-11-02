@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ImageDot</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: "Courier New", monospace;
+        }
+
+        #upload-container {
+            text-align: center;
+            margin: 100px;
+            border: 2px solid #0f0;
+            padding: 20px;
+            background-color: #111;
+            border-radius: 10px;
+        }
+
+        #upload-container h1 {
+            font-size: 36px;
+        }
+
+        #upload-container h2 {
+            font-size: 24px;
+        }
+
+        #upload-container input[type="file"] {
+            background-color: #111;
+            border: 2px solid #0f0;
+            color: #0f0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        #upload-container input[type="submit"] {
+            background-color: #0f0;
+            color: #000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #work {
+            text-align: center;
+            margin-top: 50px;
+            border: 2px solid #0f0;
+            padding: 20px;
+            background-color: #111;
+            border-radius: 10px;
+        }
+
+        #work h2 {
+            font-size: 24px;
+        }
+
+        #work p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #0f0;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="upload-container">
+        <h1>ImageDot</h1>
+        <h2>Upload Your Image</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".png, .jpg, .jpeg">
+            <br>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+    <div id="work">
+        <h2>How This Works</h2>
+        <p>
+            This cyber-enhanced tool converts your image into binary and transforms every "on bit" into a white dot, visualizing the occurrence of on bits in your image. It's a stylish way to represent your image using a cryptographic approach.
+        </p>
+    </div>
+</body>
+</html>
